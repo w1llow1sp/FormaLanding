@@ -1,1 +1,3 @@
-# photography starter
+# Initialization project.
+
+
