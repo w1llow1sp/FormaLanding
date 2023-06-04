@@ -1,11 +1,10 @@
 import React from 'react';
-
 // import data
-import goodsData from './goodsData';
+import goodsData, {goodsDataType} from './goodsData';
 //import components
 import GoodsItem from './GoodsItem';
 
-const GoodsList = (props) => {
+const GoodsList = () => {
     return (
         <section className='goods'>
             <div className='container'>
@@ -13,7 +12,7 @@ const GoodsList = (props) => {
                 <div className='goods__wrapper'>
                     {goodsData.map((goodsData) => (
                         <GoodsItem
-                            key={goodsData.id}
+                            id={goodsData.id}
                             image={goodsData.image}
                             name={goodsData.name}
                             description={goodsData.description}

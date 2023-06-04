@@ -2,12 +2,13 @@ import React from 'react';
 
 //import icon
 import Icon from './img/GiftIcon.svg';
+import {Button} from '../../UI/Button/Button';
 
 const Hero = () => {
     return (
         <div>
             <section className='hero'>
-                <div className='container hero-container'>
+                <div className='container'>
                     <h1 className='hero-header'>
                         Дизайнерские обои для Вашего интерьера на заказ
                     </h1>
@@ -23,9 +24,7 @@ const Hero = () => {
                             </p>
                         </div>
                     </div>
-                    <button className='button hero-btn'>
-                        <a href='#'>Получить рекомендации по монтажу обоев</a>
-                    </button>
+                    <Button>Получить рекомендации по монтажу</Button>
                 </div>
             </section>
         </div>

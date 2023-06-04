@@ -1,0 +1,39 @@
+:root {
+  --default:linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+  --some:linear-gradient(to right, #4C6071 0%, #55BDEA  51%, #193F50  100%);
+  --active:linear-gradient(90deg, #6488D4 0%, #193F50 100%);
+  --disabled:#8F8F8F;
+}
+
+
+.button {
+  box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  max-width: 390px;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  color:white;
+  padding: 19px 54px;
+
+  background-size: 200% auto;
+  transition: 0.5s;
+  background-image: var(--some);
+
+  &:hover {
+    background-position: right center;
+  }
+  &:disabled {
+    background-image: var(--disabled);
+  }
+  &_header {
+    margin-bottom: 34px;
+  }
+}
+
+

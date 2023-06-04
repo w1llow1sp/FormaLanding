@@ -2,22 +2,22 @@ import React from 'react';
 //import components
 import DecorationItem from '../../UI/DecorativeItem/DecorationItem';
 //import image
-import Image from './img/AboutPhoto.png';
+import Image from "./img/AboutPhoto.png"
 
 const AboutModules = () => {
     return (
         <section className='about'>
-            <DecorationItem />
+            <DecorationItem/>
             <div className='container about-container'>
                 <div className='about-container__wrapper'>
-                    <div classname='text-wrapper'>
+                    <div className='text-wrapper'>
                         <h1 className='about-header'>О нас</h1>
+                        <span className={'decription-section'}>
                         <p className='about-description'>
                             Мы хотим что бы наши проекты соответствовали нашим
                             высоким требованиям и желаниям заказчика, были
                             актуальными и уникальными.
                         </p>
-                        <br />
                         <p className='about-description'>
                             <b>Салон Forma</b>- это команда профессионалов,
                             которые воплощают в реальность самые сложные
@@ -26,8 +26,9 @@ const AboutModules = () => {
                             искусство, которое долгие годы будет радовать Ваш
                             глаз и сохранит первоклассное качество.
                         </p>
+                            </span>
                     </div>
-                    <img className='about-image' src={Image} alt='interier' />
+                    <img className='about-image' src={Image} alt='interier'/>
                 </div>
             </div>
         </section>

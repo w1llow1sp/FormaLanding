@@ -1,4 +1,11 @@
-const goodsData = [
+export type goodsDataType = {
+    id:number
+    image:string
+    name:string
+    description:string
+}
+
+export const goodsData = [
     {
         id: 1,
         image: 'https://cdn-icons-png.flaticon.com/512/126/126473.png',

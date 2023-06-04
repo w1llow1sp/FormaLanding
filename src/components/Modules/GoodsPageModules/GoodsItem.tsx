@@ -1,6 +1,7 @@
 import React from 'react';
+import {goodsDataType} from './goodsData';
 
-const GoodsItem = (props) => {
+const GoodsItem = (props:goodsDataType) => {
     return (
         <div className='goods-list'>
             <div key={props.id} className='goodsCard'>
