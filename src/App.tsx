@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Goods from './Pages/Goods';
 import ExaplesDesign from './Pages/ExaplesDesign';
 import './global.scss'
+import Form from './Pages/Form';
 
 //import data
 
@@ -18,6 +19,7 @@ const App = () => {
                 <About />
                 <Goods />
                 <ExaplesDesign />
+                <Form/>
             </Router>
         </>
     );

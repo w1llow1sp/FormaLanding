@@ -4,6 +4,7 @@ import DecorationItem from '../../UI/DecorativeItem/DecorationItem';
 import 'react-multi-carousel/lib/styles.css'
 import {CarouselBlock} from './CarouselBlock';
 import {Button} from '../../UI/Button/Button';
+import './ExampleBlock.scss'
 
 
 
@@ -14,11 +15,13 @@ const ExampleDesignsModules = () => {
         <section className='design-examples'>
             <DecorationItem/>
             <div className='container design-examples-container'>
-                <h1 className='about-header'>Примеры дизайна</h1>
+                <h1 className='about-header example-header'>Примеры дизайна</h1>
                 <CarouselBlock/>
-                <Button>Оставить заявку</Button>
-            </div>
 
+                <div className={'btn_container_example'}>
+                    <Button>Оставить заявку</Button>
+                </div>
+            </div>
         </section>
     );
 };

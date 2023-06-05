@@ -112,7 +112,7 @@ export const ExampleData = [
      }
 
     return (
-        <div>
+        <div className={'main_carousel'}>
             <Carousel
                 containerClass={'carousel-container'}
                 itemClass={'carousel-item'}
