@@ -1,5 +1,12 @@
 import React from 'react';
-import {ExapmleDataType} from './exapmleData';
+
+
+export type ExapmleDataType ={
+    id:number
+    image:string
+    collection:string
+    description:string
+}
 
 export const ExampleCard = (props: ExapmleDataType) => {
     return (

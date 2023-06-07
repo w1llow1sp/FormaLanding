@@ -1,15 +1,25 @@
 import React from 'react';
+import FormWrapper from './FormWrapper';
+
+type UserDataType = {
+    высотаПотолков:string
+}
+
+type CeilingHeightSurvey = UserDataType & {
+    updateFields:(fields:Partial<UserDataType> ) => void
+}
 
 
-export const CeilingHeightSurvey = () => {
+export const CeilingHeightSurvey = ({высотаПотолков,updateFields}:CeilingHeightSurvey) => {
     return (
         <>
-            <h2>Какова высота ваших потолков?</h2>
+            <FormWrapper title={'Какова высота ваших потолков?'}>
             <div>
                 <input type="radio"
                        id="2.5m"
                        name="CeilHeight"
-                       value="2.5м" />
+                       value="2.5м"
+                       onChange={e => updateFields({высотаПотолков: e.currentTarget.value})}/>
                 <label htmlFor="2.5m">
                     2.5 м
                 </label>
@@ -18,7 +28,8 @@ export const CeilingHeightSurvey = () => {
                 <input type="radio"
                        id="3m"
                        name="CeilHeight"
-                       value="3m" />
+                       value="3m"
+                       onChange={e => updateFields({высотаПотолков: e.currentTarget.value})}/>
                 <label htmlFor="3m">
                     3 м
                 </label>
@@ -28,8 +39,10 @@ export const CeilingHeightSurvey = () => {
                        id="other"
                        name="CeilHeight"
                        placeholder={'Точная высота'}
+                       onChange={e => updateFields({высотаПотолков: e.currentTarget.value})}
                 />
             </div>
+            </FormWrapper>
         </>
     );
 }

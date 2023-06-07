@@ -24,7 +24,7 @@ const Hero = () => {
                             </p>
                         </div>
                     </div>
-                    <Button>Получить рекомендации по монтажу</Button>
+                    <Button color={'button'}>Получить рекомендации по монтажу</Button>
                 </div>
             </section>
         </div>

@@ -19,7 +19,7 @@ const ExampleDesignsModules = () => {
                 <CarouselBlock/>
 
                 <div className={'btn_container_example'}>
-                    <Button>Оставить заявку</Button>
+                    <Button color={'button'}>Оставить заявку</Button>
                 </div>
             </div>
         </section>
